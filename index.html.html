@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Harsh Tarone – Computer Operator, Bhilai</title>
+<meta name="description" content="Portfolio of Harsh Tarone: data entry, billing and MIS reporting. B.Tech CSE, CSVTU 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F2F6F3;--surface:#FFFFFF;--ink:#13231B;--muted:#4F6358;--line:#C8D7CD;--head:#E2ECE5;
+  --accent:#1D6F42;--accent-ink:#FFFFFF;--hl:#FFF4B8;
+  --sans:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0F1A14;--surface:#16251D;--ink:#E7F0EA;--muted:#9DB2A5;--line:#2C4235;--head:#1D3126;--accent:#5CC38A;--accent-ink:#0F1A14;--hl:#4A4519;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#0F1A14;--surface:#16251D;--ink:#E7F0EA;--muted:#9DB2A5;--line:#2C4235;--head:#1D3126;--accent:#5CC38A;--accent-ink:#0F1A14;--hl:#4A4519;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--sans)}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+main{max-width:56rem;margin:0 auto;padding:2.5rem 1.25rem 3rem}
+h1,h2,h3{line-height:1.15;margin:0}
+h2{font-size:1.5rem;font-weight:700;margin:3.5rem 0 1rem}
+
+/* Hero: a worksheet */
+.sheet{background:var(--surface);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:grid;grid-template-columns:2.25rem 6.5rem 1fr}
+.sheet>*{padding:.7rem .9rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-width:0}
+.sheet>*:nth-child(3n){border-right:0}
+.sheet>*:nth-last-child(-n+3){border-bottom:0}
+.col,.row{background:var(--head);color:var(--muted);font:500 .8rem/1.4 var(--mono);text-align:center;padding:.35rem .5rem}
+.row{display:flex;align-items:center;justify-content:center;padding:.7rem .3rem}
+.lab{color:var(--muted);font-size:.9rem;display:flex;align-items:center}
+.val{display:flex;align-items:center;flex-wrap:wrap;gap:.6rem}
+.name{font-size:clamp(2.2rem,7vw,3.6rem);font-weight:800;letter-spacing:-.02em;line-height:1.05}
+.role{font-size:1.25rem;font-weight:500}
+.sel{outline:2px solid var(--accent);outline-offset:-2px;background:var(--hl);font-weight:500}
+.chip{display:inline-block;padding:.35rem .8rem;border:1px solid var(--accent);border-radius:999px;text-decoration:none;font-size:.95rem;font-weight:500}
+.chip:hover{background:var(--accent);color:var(--accent-ink)}
+
+/* Content */
+.lead{max-width:40rem;margin:0}
+.job{border-top:2px solid var(--ink);padding-top:1rem}
+.job header{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.25rem 1rem;align-items:baseline}
+.job h3{font-size:1.2rem}
+.when{color:var(--muted);font-size:.95rem}
+.job ul{margin:.8rem 0 0;padding-left:1.2rem;max-width:42rem}
+.job li{margin:.4rem 0}
+table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line)}
+th,td{text-align:left;padding:.65rem .9rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--head);font-size:.9rem;font-weight:500;color:var(--muted)}
+tr:last-child td{border-bottom:0}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.scroll{overflow-x:auto}
+.scroll table{min-width:34rem}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.5rem 2rem;margin:0}
+.skills dt{font-weight:700;margin-bottom:.15rem}
+.skills dd{margin:0;color:var(--muted)}
+footer{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-between}
+@media (max-width:34rem){
+  .sheet{grid-template-columns:1.9rem 4.6rem 1fr}
+  .sheet>*{padding:.6rem .6rem}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sel{animation:pick .9s ease-out 1}
+  @keyframes pick{from{outline-color:transparent;background:transparent}to{outline-color:var(--accent);background:var(--hl)}}
+}
+</style>
+</head>
+<body>
+<main>
+  <section class="sheet" aria-label="Introduction">
+    <div class="col" aria-hidden="true"></div><div class="col" aria-hidden="true">A</div><div class="col" aria-hidden="true">B</div>
+    <div class="row" aria-hidden="true">1</div><div class="lab">Name</div><h1 class="val name">Harsh Tarone</h1>
+    <div class="row" aria-hidden="true">2</div><div class="lab">Role</div><div class="val role">Computer Operator, 2+ years in courier operations</div>
+    <div class="row" aria-hidden="true">3</div><div class="lab">Based in</div><div class="val">Camp-1, Bhilai, Chhattisgarh 490023</div>
+    <div class="row" aria-hidden="true">4</div><div class="lab">Looking for</div><div class="val sel">An entry-level role in data operations, accounts support or IT</div>
+    <div class="row" aria-hidden="true">5</div><div class="lab">Contact</div>
+    <div class="val">
+      <a class="chip" href="mailto:harshtarone661@gmail.com?subject=Regarding%20Job%20Opportunity%20-%20Harsh%20Tarone">Email</a>
+      <a class="chip" href="tel:+919617161162">Call</a>
+      <a class="chip" href="https://github.com/GITHUBHARSH-TARONE" rel="noopener">GitHub</a>
+      <a class="chip" href="https://www.linkedin.com/in/harsh-tarone" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+
+  <h2>About</h2>
+  <p class="lead">I keep records accurate and reports on time. For over two years I have handled data entry, billing and reporting for a courier business, and in June 2026 I complete my B.Tech in Computer Science &amp; Engineering at CSVTU. I work comfortably in MS Excel, Power Query and Tally, and I learn new tools quickly.</p>
+
+  <h2>Experience</h2>
+  <article class="job">
+    <header>
+      <h3>Computer Operator, Shree Maruti Courier, Bhilai</h3>
+      <span class="when">Jun 2024 – Present</span>
+    </header>
+    <ul>
+      <li>Entered and verified daily booking, dispatch and delivery data in MS Excel, keeping records accurate and up to date.</li>
+      <li>Prepared regular reports for management and organized records so shipments could be tracked and retrieved quickly.</li>
+      <li>Processed billing and basic accounting entries, and resolved staff and customer queries on time.</li>
+    </ul>
+  </article>
+
+  <h2>Skills</h2>
+  <dl class="skills">
+    <div><dt>Data &amp; reporting</dt><dd>MS Excel, Power Query, data entry, record keeping, MIS reports</dd></div>
+    <div><dt>Accounting</dt><dd>Tally (basic), billing, invoicing</dd></div>
+    <div><dt>Office tools</dt><dd>MS Word, MS PowerPoint</dd></div>
+    <div><dt>Web</dt><dd>HTML, CSS</dd></div>
+    <div><dt>Working style</dt><dd>Attention to detail, time management, teamwork, honesty</dd></div>
+    <div><dt>Languages</dt><dd>Hindi, English</dd></div>
+  </dl>
+
+  <h2>Education</h2>
+  <div class="scroll">
+  <table>
+    <thead><tr><th scope="col">Qualification</th><th scope="col">Institution</th><th scope="col">Years</th><th scope="col">Result</th><th scope="col">Proof</th></tr></thead>
+    <tbody>
+      <tr><td>B.Tech, Computer Science &amp; Engineering</td><td>CSVTU University, Bhilai</td><td class="num">2022–2026</td><td class="num">CPI 7.48 (70.50%)</td><td><a href="https://drive.google.com/file/d/1I_sY4vYBwCi0ESNMoZP0-f-cFWjVyIXc/view?usp=sharing" rel="noopener">Certificate</a></td></tr>
+      <tr><td>Diploma in Computer Application (DCA)</td><td>Dr. C.V. Raman University, Bilaspur</td><td class="num">2023</td><td class="num">79.4%</td><td><a href="https://drive.google.com/file/d/1Vmw1s3GyGJeRx15j-j-mg_nqrg2eADuB/view?usp=sharing" rel="noopener">Certificate</a></td></tr>
+      <tr><td>Class XII</td><td>Govt. H.S. School, Camp-1, Bhilai (CGBSE)</td><td class="num">2021–2022</td><td class="num">69.2%</td><td><a href="https://drive.google.com/file/d/1HqQzhDKjEp_Hu0MbvDAg6elJSnMlpVXW/view?usp=sharing" rel="noopener">Marksheet</a></td></tr>
+      <tr><td>Class X</td><td>MLB Vidyapeeth H.S. School, Camp-1, Bhilai (CGBSE)</td><td class="num">2019–2020</td><td class="num">82.3%</td><td><a href="https://drive.google.com/file/d/1HwatB9axeJ2g2c2ulQ6RBcGoamwytDB4/view?usp=sharing" rel="noopener">Marksheet</a></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>Awards</h2>
+  <div class="scroll">
+  <table>
+    <thead><tr><th scope="col">Award</th><th scope="col">Year</th><th scope="col">Proof</th></tr></thead>
+    <tbody>
+      <tr><td>1st prize, Typing Competition</td><td class="num">2026</td><td><a href="https://drive.google.com/file/d/1Rg_KP-jZhrBV9h9cX1_YEbEknyiBguGm/view?usp=sharing" rel="noopener">Certificate</a></td></tr>
+      <tr><td>1st prize, Quiz Competition on National Science Day</td><td class="num">2023</td><td><a href="https://drive.google.com/file/d/1y7RcrTiU9KAtdjYhVLm2dmn4nesWn_jC/view?usp=sharing" rel="noopener">Certificate</a></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <footer>
+    <span>Open to entry-level roles. Write to <a href="mailto:harshtarone661@gmail.com?subject=Regarding%20Job%20Opportunity%20-%20Harsh%20Tarone">harshtarone661@gmail.com</a> or call <a href="tel:+919617161162">+91 96171 61162</a>.</span>
+    <span>© 2026 Harsh Tarone</span>
+  </footer>
+</main>
+</body>
+</html>
